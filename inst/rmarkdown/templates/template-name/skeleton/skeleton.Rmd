@@ -1,0 +1,167 @@
+---
+title: "Test"
+subtitle: "for testing"
+author: "Daniel Lüdecke"
+institute: "UKE, IMS"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    css: ["css/uke_css.css"]
+    seal: false
+    nature:
+      ratio: '16:9'
+      highlightStyle: github
+      highlightLines: true    
+---
+
+```{r , include=FALSE}
+library(knitr)
+knitr::opts_chunk$set(
+  echo = TRUE,
+  collapse = TRUE,
+  warning = FALSE,
+  message = FALSE,
+  comment = "#>",
+  fig.width = 8,
+  fig.height = 5,
+  fig.align = "center",
+  out.width = "50%",
+  dpi = 600
+)
+```
+
+class: title-slide
+<div class="uke_title"></div>
+
+.title_box[
+# This is the main title
+
+## sub title (might be place/workshop name)
+
+### Daniel Lüdecke (d.luedecke@uke.de)
+]
+
+
+<div class="title_box_logo"></div>
+
+---
+
+class: bg_uke
+<div class="uke_header"></div>
+
+.pull_left[
+# Two column layout
+
+This should be a very long text, that spans over multiple lines. This should be a very long text, that spans over multiple lines. This should be a very long text, that spans over multiple lines.
+
+* Bullet point 1
+
+* Bullet point 2
+]
+
+.pull_right[
+# Right column
+
+* Bullet point 1
+
+* Bullet point 2
+
+## 2nd Header
+
+* Bullet point 1
+
+* Bullet point 2
+]
+
+---
+
+class: bg_uke
+<div class="uke_header"></div>
+
+# Animated text
+
+--
+
+Let's test 
+
+--
+
+a click
+
+.cite[
+This should be a very long text, .red[that spans over multiple lines]. This should be a very long text, that spans over multiple lines. This should be a very long text, that spans over multiple lines.
+]
+
+---
+
+class: section-slide
+<div class="uke_section"></div>
+
+.section_box[
+## In the following slides, we show some...
+
+# Nice Plots and Images
+]
+
+---
+
+class: bg_uke
+<div class="uke_header"></div>
+
+# Simple R Code output
+
+```{r}
+library(parameters)
+model <- lm(mpg ~ wt + cyl, data = mtcars)
+model_parameters(model)
+```
+
+---
+
+class: bg_uke
+<div class="uke_header"><p>Daniel Lüdecke&nbsp;&nbsp;&middot;&nbsp;&nbsp;Multilevel Modelling in R<p></div>
+
+# Markdown Table
+
+```{r}
+library(parameters)
+model <- lm(mpg ~ wt + cyl, data = mtcars)
+print_md(model_parameters(model))
+```
+
+---
+
+class: bg_uke
+<div class="uke_header"><p>Daniel Lüdecke&nbsp;&nbsp;&middot;&nbsp;&nbsp;Multilevel Modelling in R<p></div>
+
+# Plots
+
+```{r}
+library(ggeffects)
+model <- lm(mpg ~ wt * factor(am), data = mtcars)
+plot(ggpredict(model, c("wt", "am")))
+```
+
+---
+
+class: bg_uke
+<div class="uke_header"><p>Daniel Lüdecke&nbsp;&nbsp;&middot;&nbsp;&nbsp;Multilevel Modelling in R<p></div>
+
+# Images
+
+```{r echo=FALSE, out.width="20%", fig.align='left'}
+knitr::include_graphics("img/full-join.gif", dpi = 72)
+```
+
+---
+
+class: bg_uke
+<div class="uke_header"><p>Daniel Lüdecke&nbsp;&nbsp;&middot;&nbsp;&nbsp;Multilevel Modelling in R<p></div>
+
+# HTML Table
+
+```{r}
+library(parameters)
+model <- lm(mpg ~ wt + cyl, data = mtcars)
+print_html(model_parameters(model))
+```
