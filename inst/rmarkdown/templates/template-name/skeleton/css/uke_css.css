@@ -184,10 +184,11 @@ Slide Header Container
 .uke_header p {
   font-family: "Droid Sans", "Source Sans Pro", sans-Serif;
   font-size: 20px !important;
-  color: #1F497D;
+  color: #999999;
   width: 100%;
   text-align: center;
   /*
+  color: #1F497D;
   text-align: left;
   padding-left: 120px;
   */
@@ -208,6 +209,10 @@ Source code formatting
   font-family: 'Fira Code', 'Source Code Pro', 'Lucida Console', Monaco, monospace;
   font-size: 0.9em !important;
   color: #1F497D;
+}
+
+.hljs-github .hljs {
+  background-color: #F9F6F4 !important; /* for beamer possibly #F2EFEC  */
 }
 
 .hljs-comment {
@@ -252,7 +257,7 @@ Special page / column / paragaraph formatting
 }
 
 .cite {
-  background-color: #DCE6F2;
+  background-color: #F2F4F9;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 10px;
