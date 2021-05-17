@@ -1,0 +1,286 @@
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700);
+@import url(https://fonts.googleapis.com/css?family=Fira+Code:400,700);
+
+/*
+Content Page Container
+Change overall font size here!
+*/
+
+.bg_uke {
+  padding: 50px;
+  padding-top: 90px;
+  margin: 0px;
+  font-size: 1.4em !important;
+}
+
+
+
+/*
+Main formatting
+*/
+
+body {
+  font-family: 'Droid Sans', 'Source Sans Pro', sans-serif;
+  color: #3D3D3D;
+}
+
+h1, h2, h3 {
+  font-family: 'Yanone Kaffeesatz';
+  font-weight: normal;
+  color: #1F497D;
+  /* text-shadow: 1px 1px #f0f0f0; */
+}
+
+h1 {
+  font-size: 1.8em !important;
+}
+
+h2 {
+  font-size: 1.4em !important;
+}
+
+h3 {
+  font-size: 1.2em !important;
+}
+
+ul {
+  list-style-image: url("../img/bullet.png");
+  /* list-style-type: square; */
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
+/*
+Title Page formatting
+*/
+
+.title_box {
+  position: absolute;
+  left: 0;
+  bottom: 150px;
+  background-color: #DCE6F2;
+  padding: 0;
+  padding-top: 30px;
+  width: 100%;
+  border-top:4px solid #004a93;
+}
+
+.uke_title {
+  background-image: url("../img/uke.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  width: 90%;
+  height: 100px;
+  z-index: 0;
+}
+
+.title_box_logo {
+  background-image: url("../img/uke2.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  bottom: 25px;
+  height:100px;
+  width: 400px;
+}
+
+.title-slide .remark-slide-number {
+  display: none;
+}
+
+.title-slide h1 {
+  font-size: 2.2em !important;
+  /* font-family: 'Source Sans Pro', 'Droid Sans', sans-serif; */
+  padding-left: 50px !important;
+}
+
+.title-slide h2 {
+  font-size: 1.6em !important;
+  /* font-family: 'Source Sans Pro', 'Droid Sans', sans-serif; */
+  padding-left: 50px !important;
+  padding-bottom: 30px !important;
+}
+
+.title-slide h3 {
+   font-family: 'Source Sans Pro', 'Droid Sans', sans-serif;
+  font-size: 1em !important;
+  background-color: white;
+  color: #3d3d3d;
+  margin: 0;
+  padding: 30px !important;
+  padding-left: 50px !important;
+}
+
+
+
+/*
+Section Slide
+*/
+
+.section_box {
+  position: absolute;
+  left: 0;
+  bottom: 250px;
+  padding: 0;
+  padding-top: 30px;
+  width: 100%;
+}
+
+.uke_section {
+  background-image: url("../img/uke.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  width: 90%;
+  height: 100px;
+  z-index: 0;
+}
+
+.section-slide h1 {
+  font-size: 2.2em !important;
+  /* font-family: 'Source Sans Pro', 'Droid Sans', sans-serif; */
+  padding-left: 50px !important;
+}
+
+.section-slide h2 {
+  font-size: 1.2em !important;
+  /* font-family: 'Source Sans Pro', 'Droid Sans', sans-serif; */
+  padding-left: 50px !important;
+  color: #3D3D3D;
+}
+
+
+
+/*
+Slide Header Container
+*/
+
+.uke_header {
+  background-image: url("../img/uke.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 15px;
+  left: 50px;
+  width: 90%;
+  height: 70px;
+  z-index: 0;
+}
+
+.uke_header p {
+  font-family: "Droid Sans", "Source Sans Pro", sans-Serif;
+  font-size: 20px !important;
+  color: #999999;
+  width: 100%;
+  text-align: center;
+  /*
+  color: #1F497D;
+  text-align: left;
+  padding-left: 120px;
+  */
+}
+
+
+
+/*
+Source code formatting
+*/
+
+.remark-code {
+  font-family: 'Fira Code', 'Source Code Pro', 'Lucida Console', Monaco, monospace;
+  font-size: 0.8em !important;
+}
+
+.remark-inline-code {
+  font-family: 'Fira Code', 'Source Code Pro', 'Lucida Console', Monaco, monospace;
+  font-size: 0.9em !important;
+  color: #1F497D;
+}
+
+.hljs-github .hljs {
+  background-color: #F9F6F4 !important; /* for beamer possibly #F2EFEC  */
+}
+
+.hljs-comment {
+  color: #777777 !important;
+  font-style: normal !important;
+}
+
+
+
+/*
+Special page / column / paragaraph formatting
+*/
+
+.pull_left {
+  float: left;
+  width: 48%;
+}
+
+.pull_right {
+  float: right;
+  width: 48%;
+}
+
+.pull_right ~ * {
+  clear: both;
+}
+
+.narrow_box {
+  width: 70%;
+}
+
+.footnote {
+  position: absolute;
+  bottom: 60px;
+  padding-right: 4em;
+  font-size: 0.9em;
+}
+
+.text_table_header {
+  color: #1F497D;
+  font-size: 1.1em !important;
+}
+
+.cite {
+  background-color: #F2F4F9;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-left: 10px;
+  font-size: 1.1em;
+  color: #1F497D;
+}
+
+.red {
+  color: #c00000;
+}
+
+.grey {
+  color: #3D3D3D;
+}
+
+@page { margin: 0; }
+@media print {
+  .remark-slide-scaler {
+    width: 100% !important;
+    height: 100% !important;
+    transform: scale(1) !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+}
