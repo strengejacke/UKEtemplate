@@ -119,6 +119,21 @@ model_parameters(model)
 ---
 
 class: bg_uke
+<div class="uke_header"></div>
+
+# Tables that look less like comments
+
+.text_table_header[A table header]
+
+```{r echo=FALSE, comment=""}
+library(parameters)
+model <- lm(mpg ~ wt + cyl * am, data = mtcars)
+model_parameters(model)
+```
+
+---
+
+class: bg_uke
 <div class="uke_header"><p>Daniel Lüdecke&nbsp;&nbsp;&middot;&nbsp;&nbsp;Multilevel Modelling in R<p></div>
 
 # Markdown Table
