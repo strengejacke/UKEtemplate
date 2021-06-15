@@ -291,10 +291,10 @@ Special page / column / paragaraph formatting
 
 .cite {
   background-color: #F2F4F9;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 15px;
-  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-left: 20px;
   font-size: 1.1em;
   color: #004992;
 }
