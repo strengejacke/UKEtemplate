@@ -9,12 +9,43 @@ Content Page Container
 Change overall font size here!
 */
 
+
+/*
+Default page container, 100% width
+*/
+
 .bg_uke {
   padding: 50px;
   padding-top: 90px;
   margin: 0px;
   font-size: 1.4em !important;
 }
+
+
+/*
+Default narrow page container, 75% width. Use for 16:9 format,
+to avoid over-lengthy lines
+*/
+
+.bg_uke_narrow {
+  padding: 50px;
+  padding-top: 90px;
+  margin: 0px;
+  font-size: 1.4em !important;
+  width: 75%;
+}
+
+
+/*
+Default color for hyperlinks
+*/
+
+.bg_uke a, .bg_uke_narrow a {
+  color: #04C3CD !important;
+  text-decoration: none !important;
+}
+
+
 
 
 
@@ -114,7 +145,7 @@ Title Page formatting
 }
 
 .title-slide h3 {
-   font-family: 'Source Sans Pro', 'Droid Sans', sans-serif;
+  font-family: 'Source Sans Pro', 'Droid Sans', sans-serif;
   font-size: 1em !important;
   background-color: white;
   color: #3d3d3d;
