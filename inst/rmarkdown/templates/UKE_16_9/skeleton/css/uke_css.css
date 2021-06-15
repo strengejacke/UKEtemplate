@@ -32,8 +32,12 @@ to avoid over-lengthy lines
   padding-top: 90px;
   margin: 0px;
   font-size: 1.4em !important;
-  width: 75%;
 }
+
+.bg_uke_narrow p, .bg_uke_narrow ul, .bg_uke_narrow ol {
+  width: 77% !important;
+}
+
 
 
 /*
@@ -61,7 +65,7 @@ body {
 h1, h2, h3 {
   font-family: 'Yanone Kaffeesatz';
   font-weight: normal;
-  color: #1F497D;
+  color: #004992;
   /* text-shadow: 1px 1px #f0f0f0; */
 }
 
@@ -219,7 +223,7 @@ Slide Header Container
   width: 100%;
   text-align: center;
   /*
-  color: #1F497D;
+  color: #004992;
   text-align: left;
   padding-left: 120px;
   */
@@ -239,7 +243,7 @@ Source code formatting
 .remark-inline-code {
   font-family: 'Fira Code', 'Source Code Pro', 'Lucida Console', Monaco, monospace;
   font-size: 0.9em !important;
-  color: #1F497D;
+  color: #004992;
 }
 
 .hljs-github .hljs {
@@ -283,7 +287,7 @@ Special page / column / paragaraph formatting
 }
 
 .text_table_header {
-  color: #1F497D;
+  color: #004992;
   font-size: 1.1em !important;
 }
 
@@ -294,11 +298,23 @@ Special page / column / paragaraph formatting
   padding-left: 10px;
   padding-left: 10px;
   font-size: 1.1em;
-  color: #1F497D;
+  color: #004992;
 }
 
 .red {
-  color: #c00000;
+  color: #B22229;
+}
+
+.orange {
+  color: #EF7B05;
+}
+
+.yellow {
+  color: #FFDF00;
+}
+
+.green {
+  color: #8ABD24;
 }
 
 .grey {
