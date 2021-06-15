@@ -30,13 +30,11 @@ to avoid over-lengthy lines
 .bg_uke_narrow {
   padding: 50px;
   padding-top: 90px;
+  padding-right: 25%;
   margin: 0px;
   font-size: 1.4em !important;
 }
 
-.bg_uke_narrow p, .bg_uke_narrow ul, .bg_uke_narrow ol {
-  width: 77% !important;
-}
 
 
 
@@ -238,6 +236,7 @@ Source code formatting
 .remark-code {
   font-family: 'Fira Code', 'Source Code Pro', 'Lucida Console', Monaco, monospace;
   font-size: 0.8em !important;
+  padding-right: 50px !important;
 }
 
 .remark-inline-code {
@@ -248,6 +247,7 @@ Source code formatting
 
 .hljs-github .hljs {
   background-color: #F9F6F4 !important; /* for beamer possibly #F2EFEC  */
+  padding-right: 50px !important;
 }
 
 .hljs-comment {
@@ -309,12 +309,20 @@ Special page / column / paragaraph formatting
   color: #EF7B05;
 }
 
+.amber {
+  color: #FCBE0E;
+}
+
 .yellow {
   color: #FFDF00;
 }
 
 .green {
   color: #8ABD24;
+}
+
+.brown {
+  color: #AA9C8F;
 }
 
 .grey {
