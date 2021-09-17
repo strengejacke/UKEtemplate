@@ -75,7 +75,7 @@ This should be a very long text, that spans over multiple lines. This should be 
 
 ---
 
-class: bg_uke
+class: bg_uke_narrow
 <div class="uke_header"></div>
 
 # Animated text
@@ -91,6 +91,16 @@ a click
 .cite[
 This should be a very long text, .red[that spans over multiple lines]. This should be a very long text, that spans over multiple lines. This should be a very long text, that spans over multiple lines.
 ]
+
+---
+
+class: bg_uke_narrow
+<div class="uke_header"></div>
+
+# And a block-quote...
+
+> This is a block-quote
+> which should have a border...
 
 ---
 
