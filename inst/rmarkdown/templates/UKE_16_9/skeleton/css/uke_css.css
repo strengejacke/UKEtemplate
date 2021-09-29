@@ -288,6 +288,7 @@ Special page / column / paragaraph formatting
   bottom: 60px;
   padding-right: 4em;
   font-size: 0.9em;
+  color: #5f5f5f;
 }
 
 .text_table_header {
@@ -302,6 +303,18 @@ Special page / column / paragaraph formatting
   padding-left: 20px;
   padding-right: 20px;
   font-size: 1.1em;
+  color: #004992;
+}
+
+/*
+spacer can be used with <hr>, like <hr class="spacer">
+*/
+.spacer{
+  border: none;
+  margin-top: 1.7em;
+}
+
+.blue {
   color: #004992;
 }
 
