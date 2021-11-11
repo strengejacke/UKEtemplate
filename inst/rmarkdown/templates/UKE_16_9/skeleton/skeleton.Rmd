@@ -144,6 +144,31 @@ model_parameters(model)
 ---
 
 class: bg_uke
+<div class="uke_header"></div>
+
+# Tables that look less like comments, grouped no vertical borders
+
+.text_table_header[A table header]
+
+```{r echo=FALSE, comment=""}
+library(parameters)
+data(mtcars)
+mtcars$cyl <- as.factor(mtcars$cyl)
+mtcars$gear <- as.factor(mtcars$gear)
+model <- lm(mpg ~ hp + gear * vs + cyl + drat, data = mtcars)
+
+# don't select "Intercept" parameter
+mp <- model_parameters(model, drop = "^\\(Intercept")
+
+print(mp, sep = "   ", ci_brackets = c("(", ")"),
+      groups = list("Engine" = c("cyl6", "cyl8", "vs", "hp"),
+                    "Interactions" = c("gear4:vs", "gear5:vs"), 
+                    "Controls" = c(2, 3, 7)))
+```
+
+---
+
+class: bg_uke
 <div class="uke_header"><p>Daniel Lüdecke&nbsp;&nbsp;&middot;&nbsp;&nbsp;Multilevel Modelling in R<p></div>
 
 # Markdown Table
