@@ -42,7 +42,7 @@ to avoid over-lengthy lines
 Default color for hyperlinks
 */
 
-.bg_uke a, .bg_uke_narrow a {
+.bg_uke a, .bg_uke_narrow a, .title-slide a, .section-slide a {
   color: #04C3CD !important;
   text-decoration: none !important;
 }
@@ -56,7 +56,7 @@ Main formatting
 */
 
 body {
-  font-family: 'PT Sans', 'Source Sans Pro', sans-serif;
+  font-family: 'Source Sans Pro', 'PT Sans', sans-serif;
   color: #3D3D3D;
 }
 
@@ -175,6 +175,14 @@ Section Slide
   padding: 0;
   padding-top: 30px;
   width: 100%;
+}
+
+.section_box_logo {
+  position: absolute;
+  right: 0;
+  bottom: 325px;
+  padding: 0;
+  width: 170px;
 }
 
 .uke_section {
@@ -306,12 +314,28 @@ Special page / column / paragaraph formatting
   color: #004992;
 }
 
+.cite_center {
+  background-color: #F2F4F9;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1.1em;
+  color: #004992;
+  text-align:center ;
+}
+
 /*
 spacer can be used with <hr>, like <hr class="spacer">
 */
 .spacer{
   border: none;
   margin-top: 1.7em;
+}
+
+.smallspacer{
+  border: none;
+  margin-top: 1em;
 }
 
 .blue {
@@ -345,6 +369,17 @@ spacer can be used with <hr>, like <hr class="spacer">
 .grey {
   color: #3D3D3D;
 }
+
+.header_center {
+  font-family: 'Yanone Kaffeesatz';
+  font-weight: normal;
+  color: #004992;
+  text-align: center;
+  font-size: 2em !important;
+  width: 95%;
+}
+
+
 
 @page { margin: 0; }
 @media print {
