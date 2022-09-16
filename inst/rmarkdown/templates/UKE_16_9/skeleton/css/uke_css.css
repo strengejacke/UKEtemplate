@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Flex);
 @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
 @import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic);
@@ -18,7 +20,8 @@ Default page container, 100% width
   padding: 50px;
   padding-top: 90px;
   margin: 0px;
-  font-size: 1.4em !important;
+  font-size: 1.3em !important;
+  line-height: 1.2 !important;
 }
 
 
@@ -32,7 +35,8 @@ to avoid over-lengthy lines
   padding-top: 90px;
   padding-right: 25%;
   margin: 0px;
-  font-size: 1.4em !important;
+  font-size: 1.3em !important;
+  line-height: 1.2 !important;
 }
 
 
@@ -42,7 +46,7 @@ to avoid over-lengthy lines
 Default color for hyperlinks
 */
 
-.bg_uke a, .bg_uke_narrow a {
+.bg_uke a, .bg_uke_narrow a, .title-slide a, .section-slide a {
   color: #04C3CD !important;
   text-decoration: none !important;
 }
@@ -56,27 +60,27 @@ Main formatting
 */
 
 body {
-  font-family: 'PT Sans', 'Source Sans Pro', sans-serif;
+  font-family: 'Roboto Flex', 'Source Sans Pro', 'PT Sans', sans-serif;
   color: #3D3D3D;
 }
 
 h1, h2, h3 {
-  font-family: 'Yanone Kaffeesatz';
+  font-family: 'Roboto Slab', 'Yanone Kaffeesatz';
   font-weight: normal;
   color: #004992;
   /* text-shadow: 1px 1px #f0f0f0; */
 }
 
 h1 {
-  font-size: 1.8em !important;
-}
-
-h2 {
   font-size: 1.4em !important;
 }
 
+h2 {
+  font-size: 1.1em !important;
+}
+
 h3 {
-  font-size: 1.2em !important;
+  font-size: 1em !important;
 }
 
 ul {
@@ -140,13 +144,13 @@ Title Page formatting
 }
 
 .title-slide h1 {
-  font-size: 2.2em !important;
+  font-size: 1.6em !important;
   /* font-family: 'Source Sans Pro', 'PT Sans', sans-serif; */
   padding-left: 50px !important;
 }
 
 .title-slide h2 {
-  font-size: 1.6em !important;
+  font-size: 1.2em !important;
   /* font-family: 'Source Sans Pro', 'PT Sans', sans-serif; */
   padding-left: 50px !important;
   padding-bottom: 30px !important;
@@ -177,6 +181,14 @@ Section Slide
   width: 100%;
 }
 
+.section_box_logo {
+  position: absolute;
+  right: 0;
+  bottom: 325px;
+  padding: 0;
+  width: 170px;
+}
+
 .uke_section {
   background-image: url("../img/uke.png");
   background-size: contain;
@@ -190,13 +202,13 @@ Section Slide
 }
 
 .section-slide h1 {
-  font-size: 2.2em !important;
+  font-size: 1.6em !important;
   /* font-family: 'Source Sans Pro', 'PT Sans', sans-serif; */
   padding-left: 50px !important;
 }
 
 .section-slide h2 {
-  font-size: 1.2em !important;
+  font-size: 1.1em !important;
   /* font-family: 'Source Sans Pro', 'PT Sans', sans-serif; */
   padding-left: 50px !important;
   color: #3D3D3D;
@@ -221,8 +233,8 @@ Slide Header Container
 }
 
 .uke_header p {
-  font-family: "PT Sans", "Source Sans Pro", sans-Serif;
-  font-size: 20px !important;
+  font-family: "Roboto Flex", "PT Sans", "Source Sans Pro", sans-Serif;
+  font-size: 16px !important;
   color: #999999;
   width: 100%;
   text-align: center;
@@ -306,12 +318,28 @@ Special page / column / paragaraph formatting
   color: #004992;
 }
 
+.cite_center {
+  background-color: #F2F4F9;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1.1em;
+  color: #004992;
+  text-align:center ;
+}
+
 /*
 spacer can be used with <hr>, like <hr class="spacer">
 */
 .spacer{
   border: none;
   margin-top: 1.7em;
+}
+
+.smallspacer{
+  border: none;
+  margin-top: 1em;
 }
 
 .blue {
@@ -345,6 +373,17 @@ spacer can be used with <hr>, like <hr class="spacer">
 .grey {
   color: #3D3D3D;
 }
+
+.header_center {
+  font-family: 'Yanone Kaffeesatz';
+  font-weight: normal;
+  color: #004992;
+  text-align: center;
+  font-size: 1.8em !important;
+  width: 95%;
+}
+
+
 
 @page { margin: 0; }
 @media print {
