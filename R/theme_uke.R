@@ -1,6 +1,7 @@
 #' @export
 theme_uke <- function(base_size = 11,
-                      base_family = "",
+                      base_family = "Source Sans Pro",
+                      title_family = "Roboto Slab",
                       plot.title.size = 1.35 * base_size,
                       plot.title.face = "plain",
                       plot.title.space = 1.8 * base_size,
@@ -56,6 +57,7 @@ theme_uke <- function(base_size = 11,
       axis.text.x.bottom = element_text(margin = margin(t = base_size * 1.3, r = 0, b = 0, l = 0)),
       axis.text.y.left = element_text(margin = margin(t = 0, r = base_size * 1.3, b = 0, l = 0)),
       legend.background = element_rect(fill = color_bg),
+      plot.title = element_text(family = title_family),
       ...
     )
 }
