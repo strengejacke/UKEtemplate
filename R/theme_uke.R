@@ -42,7 +42,9 @@ theme_uke <- function(base_size = 11,
     tags.face = tags.face
   ) +
     theme(
+      plot.title = element_text(family = title_family),
       plot.background = element_rect(fill = color_bg),
+      plot.margin = unit(c(1, 1, 1, 1), "cm"),
       panel.background = element_rect(fill = color_bg),
       panel.grid.major.x = element_blank(),
       panel.grid.minor.x = element_blank(),
@@ -57,7 +59,6 @@ theme_uke <- function(base_size = 11,
       axis.text.x.bottom = element_text(margin = margin(t = base_size * 1.3, r = 0, b = 0, l = 0)),
       axis.text.y.left = element_text(margin = margin(t = 0, r = base_size * 1.3, b = 0, l = 0)),
       legend.background = element_rect(fill = color_bg),
-      plot.title = element_text(family = title_family),
       ...
     )
 }
